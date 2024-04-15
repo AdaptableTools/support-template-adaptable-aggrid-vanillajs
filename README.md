@@ -1,10 +1,9 @@
-# AdapTable Support Template for Vanilla JavaScript
-
+# AdapTable (Vanilla JavaScript) Support Template
 This is a very basic example of how to get started with AdapTable - the market-leading, low code AG Grid extension.
 
 This template is particularly useful if you wish to build a very small demo for Support purposes.
 
-It is written purely in **JavaScript** and does not one of the Framework wrappers.
+It is written purely in **JavaScript** and does not use one of the Framework wrappers, nor does it use TypeScript.
 
 For full information on how to use AdapTable see the [AdapTable Documentation](https://docs.adaptabletools.com).
 
