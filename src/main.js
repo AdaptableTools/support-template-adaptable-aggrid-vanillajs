@@ -34,6 +34,31 @@ const adaptableOptions = {
   },
   predefinedConfig: {
     // put here your custom Adaptable State
+    Layout: {
+      CurrentLayout: 'default',
+      Layouts: [
+        {
+          Name: 'default',
+          TableColumns: [
+            'id',
+            'name',
+            'language',
+            'github_stars',
+            'license',
+            'week_issue_change',
+            'created_at',
+            'has_wiki',
+            'updated_at',
+            'pushed_at',
+            'github_watchers',
+            'open_issues_count',
+            'closed_issues_count',
+            'open_pr_count',
+            'closed_pr_count',
+          ],
+        },
+      ],
+    },
   },
 };
 
@@ -42,6 +67,7 @@ const gridOptions = {
   defaultColDef,
   columnDefs,
   rowData,
+  theme: 'legacy',
 };
 
 // Create an AG Grid Config object which contains AG Grid Grid Options and Modules
