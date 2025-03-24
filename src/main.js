@@ -5,6 +5,7 @@ import Adaptable from '@adaptabletools/adaptable/agGrid';
 import { columnDefs, defaultColDef } from './columnDefs';
 import { rowData } from './rowData';
 import { agGridModules } from './agGridModules';
+import { initialState } from '@adaptabletools/adaptable/src/View/AdaptableWizardView/Wizard';
 
 // Build the AdaptableOptions object and set primaryKey and adaptableId
 // In this example we are NOT creating any predefined config nor providing any Adaptable Options classes (e.g. filters, entitlements)
@@ -32,7 +33,7 @@ const adaptableOptions = {
       });
     },
   },
-  predefinedConfig: {
+  initialState: {
     // put here your custom Adaptable State
     Layout: {
       CurrentLayout: 'default',
