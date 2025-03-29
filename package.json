@@ -10,8 +10,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@adaptabletools/adaptable": "20.0.0",
-    "ag-grid-enterprise": "33.1.1"
+    "@adaptabletools/adaptable": "~20.0.0",
+    "ag-grid-enterprise": "~33.0.4"
   },
   "devDependencies": {
     "vite": "^5.3.5"
