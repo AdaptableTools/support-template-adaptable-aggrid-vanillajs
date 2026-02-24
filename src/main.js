@@ -1,39 +1,90 @@
-import './style.css';
+import { Adaptable } from '@adaptabletools/adaptable';
 
-import Adaptable from '@adaptabletools/adaptable/agGrid';
+import { themeQuartz } from 'ag-grid-enterprise';
+
+import './style.css';
 
 import { columnDefs, defaultColDef } from './columnDefs';
 import { rowData } from './rowData';
 import { agGridModules } from './agGridModules';
 
-// Build the AdaptableOptions object and set primaryKey and adaptableId
-// In this example we are NOT creating any predefined config nor providing any Adaptable Options classes (e.g. filters, entitlements)
-// However in the real world you will set up AdapTable Options to fit your requirements and configure your permissions and remote State
-// You will also provide Predefined Config so that AdapTable ships for first time use with your required objects
-const adaptableOptions= {
-    primaryKey: 'id',
-    userName: 'support user',
-    adaptableId: 'AdapTable VanillaJS Support Template',
-    predefinedConfig: {
-        // put here your custom Adaptable State
+const adaptableOptions = {
+  primaryKey: 'id',
+  userName: 'support user',
+  adaptableId: 'AdapTable VanillaJS Support Template',
+  initialState: {
+    Dashboard: {
+      Tabs: [
+        {
+          Name: 'Home',
+          Toolbars: ['Layout'],
+        },
+      ],
     },
+    Layout: {
+      Revision: Date.now(),
+      CurrentLayout: 'Basic',
+      Layouts: [
+        {
+          Name: 'Basic',
+          TableColumns: [
+            'name',
+            'language',
+            'github_stars',
+            'license',
+            'week_issue_change',
+            'created_at',
+            'has_wiki',
+            'updated_at',
+            'pushed_at',
+            'github_watchers',
+            'description',
+            'open_issues_count',
+            'closed_issues_count',
+            'open_pr_count',
+            'closed_pr_count',
+          ],
+        },
+        {
+          Name: 'Pivot',
+          PivotColumns: ['language'],
+          PivotGroupedColumns: ['license', 'has_wiki'],
+          PivotAggregationColumns: [
+            {
+              ColumnId: 'github_stars',
+              AggFunc: 'sum',
+            },
+            {
+              ColumnId: 'open_issues_count',
+              AggFunc: 'sum',
+            },
+            {
+              ColumnId: 'open_pr_count',
+              AggFunc: 'sum',
+            },
+            {
+              ColumnId: 'closed_pr_count',
+              AggFunc: 'sum',
+            },
+          ],
+        },
+      ],
+    },
+  },
 };
 
-// Create an AG Grid GridOptions object with the Column Definitions and Row Data created above
 const gridOptions = {
-    defaultColDef,
-    columnDefs,
-    rowData,
+  defaultColDef,
+  columnDefs,
+  rowData,
+  theme: themeQuartz,
 };
 
-// Create an AG Grid Config object which contains AG Grid Grid Options and Modules
 const agGridConfig = {
-    modules: agGridModules,
-    gridOptions: gridOptions,
+  modules: agGridModules,
+  gridOptions: gridOptions,
 };
 
-// Asynchronously instantiate AdapTable with Adaptable Options and AG Grid Config
 Adaptable.init(adaptableOptions, agGridConfig).then((api) => {
-    console.log('AdapTable ready!');
+  console.log('AdapTable ready!');
 });
-
