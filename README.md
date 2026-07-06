@@ -11,8 +11,8 @@ For full information on how to use AdapTable see the [AdapTable Documentation](h
 
 The demo is built using these key packages:
 
-- [AdapTable](https://docs.adaptabletools.com/) version 22.x
-- [AG Grid](https://www.ag-grid.com) version 35.x
+- [AdapTable](https://docs.adaptabletools.com/) version 23.x
+- [AG Grid](https://www.ag-grid.com) version 35.3
 
 ## Contents
 
@@ -20,8 +20,9 @@ This template contains just the bare bones required to set up an AdapTable insta
 
 A "real world" example would likely include:
 
-- Design-time - providing [Adaptable Options](https://docs.adaptabletools.com/guide/reference-options-overview) and [Predefined Config](https://docs.adaptabletools.com/guide/reference-predefined-config) to configure the application
-- Run-time - using the [Adaptable API](https://docs.adaptabletools.com/guide/reference-api-overview) and listening to [Adaptable Events](https://docs.adaptabletools.com/guide/reference-event-overview)
+- Design-time - providing [Adaptable Options](https://www.adaptabletools.com/docs/technical-reference-adaptable-options) and [Initial Adaptable State](https://www.adaptabletools.com/docs/technical-reference-initial-state) to configure the application
+- Run-time - using the [Adaptable API](https://www.adaptabletools.com/docs/technical-reference-adaptable-api) and listening to [Adaptable Events](https://www.adaptabletools.com/docs/technical-reference-adaptable-events)
+
 
 ## Installation
 
@@ -55,9 +56,10 @@ $ npx serve dist
 
 to launch a webserver that serves the generated `dist` folder - now go to [localhost:5000](http://localhost:5000) to see the production version.
 
+
 ## Licences
 
-An [AdapTable Licence](https://docs.adaptabletools.com/guide/licensing) provides access to all product features as well as quarterly updates and enhancements through the lifetime of the licence, comprehensive support, and access to all 3rd party libraries.
+An [AdapTable Licence](https://www.adaptabletools.com/buy/buying-adaptable-licensing) provides access to all product features as well as quarterly updates and enhancements through the lifetime of the licence, comprehensive support, and access to all 3rd party libraries.
 
 Licences can be purchased individually, for a team, for an organisation or for integration into software for onward sale.
 
@@ -67,13 +69,9 @@ Please contact [`sales@adaptabletools.com`](mailto:sales@adaptabletools.com) for
 
 ## Help
 
-Developers can learn how to access AdapTable programmatically at [AdapTable Documentation](https://docs.adaptabletools.com).  
+Developers can learn how to access AdapTable programmatically at [AdapTable Documentation](https://www.adaptabletools.com/docs).
 
 Here you can see a large number of AdapTable demos each showing a different feature, function or option in AdapTable.
-
-## Demo
-
-To see AdapTable in action visit our [Demo Site](https://www.adaptabletools.com/demos) which contains a few larger demos.
 
 ## More Information
 
