@@ -5,7 +5,7 @@ This template is particularly useful if you wish to build a very small demo for 
 
 It is written purely in **JavaScript** and does not use one of the Framework wrappers, nor does it use TypeScript.
 
-For full information on how to use AdapTable see the [AdapTable Documentation](https://docs.adaptabletools.com).
+For full information on how to use AdapTable see the [AdapTable Documentation](https://www.adaptabletools.com/docs).
 
 ## Versions and Dependencies
 
