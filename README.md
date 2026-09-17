@@ -11,8 +11,8 @@ For full information on how to use AdapTable see the [AdapTable Documentation](h
 
 The demo is built using these key packages:
 
-- [AdapTable](https://docs.adaptabletools.com/) version 23.x
-- [AG Grid](https://www.ag-grid.com) version 35.3
+- [AdapTable](https://docs.adaptabletools.com/) version 23.1
+- [AG Grid](https://www.ag-grid.com) version 36.2
 
 ## Contents
 
